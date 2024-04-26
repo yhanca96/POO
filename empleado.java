@@ -5,13 +5,16 @@ public class empleado {
         private int Edad;
         private String Direccion;
         private String Cargo;
+        private int Salario;
 
-        public empleado(String nombre, String apellido, int edad, String cargo) {
+        public empleado(String nombre, String apellido, int edad, String cargo, int salario) {
             Nombre = nombre;
             Apellido = apellido;
             Edad = edad;
             Cargo = cargo;
+            Salario = salario;
         }
+        
 
         public String getNombre() {
             return Nombre;
@@ -51,6 +54,16 @@ public class empleado {
 
         public void setCargo(String cargo) {
             Cargo = cargo;
+        }
+
+
+        public int getSalario() {
+            return Salario;
+        }
+
+
+        public void setSalario(int salario) {
+            Salario = salario;
         }
 
     }
